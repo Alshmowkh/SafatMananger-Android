@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Safat Mananger</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_zone">إضافة ظيعة</string>
+    <string name="title_activity_feild">FeildActiv</string>
+    <string name="prompt">اختر وحدة قياس المساحة</string>
+    <string name="addZone">Add Zone</string>
+    <string name="title_activity_field_list">FieldListActivity</string>
+</resources>

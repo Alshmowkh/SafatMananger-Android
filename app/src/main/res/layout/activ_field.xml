@@ -1,0 +1,177 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbars="vertical"
+    android:textDirection="rtl"
+    tools:context="com.alshmowkh.safatmananger.activities.FieldActiv">
+
+    <LinearLayout
+        android:id="@+id/layoutFiled1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/lblAddField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="إضافة :" />
+
+        <Spinner
+            android:id="@+id/spinTypeNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/arrayRes"
+
+            android:textDirection="rtl" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="في" />
+
+        <Spinner
+            android:id="@+id/spinNewIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:entries="@array/arrayRes"
+
+            android:textDirection="rtl" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/imgField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/abc_ic_clear_mtrl_alpha"
+            />
+        <Button
+            android:id="@+id/btnTakePhoto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/circular"
+            android:drawableTop="@android:drawable/ic_menu_camera"
+            android:paddingTop="15dp"
+            android:text="photo"
+            android:textSize="9dp" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:divider="@drawable/abc_list_divider_mtrl_alpha"
+            android:orientation="vertical"
+
+            android:showDividers="middle">
+            <!-- <ImageView
+                 android:id="@+id/imgField"
+                 android:layout_width="250dp"
+                 android:layout_height="150dp"
+                 android:layout_gravity="center" />-->
+
+            <EditText
+                android:id="@+id/txtFieldID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="رقم القسم"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/txtFieldName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="اسم القسم"
+                android:inputType="textPersonName"
+
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txtFieldDocArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="المساحة في الوثيقة"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    android:textSize="14dp" />
+
+
+                <EditText
+                    android:id="@+id/txtFieldAcualArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="المساحة الفعلية"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    android:textSize="14dp" />
+
+
+                <Spinner
+                    android:id="@+id/measureType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/measures"
+                    android:prompt="@string/prompt"
+
+                    android:textDirection="rtl" />
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/txtFieldAlmonds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="عدد اللوز"
+                android:inputType="number"
+
+                />
+
+            <EditText
+                android:id="@+id/txtFieldGates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="عدد القات"
+                android:inputType="number" />
+
+
+            <EditText
+                android:id="@+id/txtFieldNotes"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Notes"
+
+                android:inputType="textMultiLine" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

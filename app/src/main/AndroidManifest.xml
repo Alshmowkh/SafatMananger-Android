@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alshmowkh.safatmananger" >
+
+    <!--
+    <application android:name="com.alshmowkh.safatmananger.utiles.App">
+
+    </application>
+    -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ZoneActiv"
+            android:label="@string/title_activity_zone" >
+        </activity>
+        <activity
+            android:name=".activities.FieldActiv"
+            android:label="@string/title_activity_feild" >
+        </activity>
+        <activity
+            android:name=".list_activities.FieldListActivity"
+            android:label="@string/title_activity_field_list" >
+        </activity>
+    </application>
+
+</manifest>

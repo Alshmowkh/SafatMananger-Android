@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arrayRes">
+        <item>ظيعة</item>
+        <item>قسم</item>
+        <item>حقبة</item>
+        <item>خروجة</item>
+        <item>معلقات</item>
+    </string-array>
+
+    <string-array name="measures">
+        <item>لبنة</item>
+        <item>متر مربع</item>
+        <item>متر طولي</item>
+    </string-array>
+
+</resources>
